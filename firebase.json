@@ -3,7 +3,16 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
+  "emulators": {
+    "hosting": {
+      "port": "6002"
+    },
+    "firestore": {
+      "port": "6003"
+    }
+  },
   "hosting": {
+    "site": "vandysecretpal",
     "public": "public",
     "ignore": [
       "firebase.json",

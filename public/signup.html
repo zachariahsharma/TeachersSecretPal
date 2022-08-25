@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        html, body {
+            background: hsla(0, 0%, 0%, 1);
+            background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, white 100%);
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #container {
+      height: 100vh;
+      width:100vw;
+      margin:0px;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+    }
+    #innercontainer {
+      width:40%;
+      height:70%;
+      background:rgb(150, 150, 150);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding:1%;
+      border-radius:5px;
+    }
+    @media only screen and (max-width: 1120px) {
+        #innercontainer {
+           font-size: 14px;
+        }
+      }
+      @media only screen and (max-width: 815px) {
+        #innercontainer {
+           font-size: 13px;
+        }
+      }
+      @media only screen and (max-width: 645px) {
+        #innercontainer {
+           font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 595px) {
+        #innercontainer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+          #innercontainer {
+             font-size: 15px;
+             width:100vw;
+          }
+        }
+      
+      @media only screen and (max-width: 435px) {
+        #innercontainer {
+           font-size: 13px;
+        }
+      }
+    #emaillabel {
+        width:10%;
+        float:left;
+        padding-top:5px;
+    }
+    #email {
+        float:right;
+        width:90%;
+    }
+    #clear {
+        clear:both;
+    }
+    .passwordlabel {
+        float:left;
+        width:10%;
+        padding-top:5px;
+    }
+    #password {
+        float:right;
+        width:90%;
+        
+    }
+    #submit {
+        float:right;
+        font-size:20px;
+        margin-top:2%;
+    
+    }
+    #select {
+        float:right;
+        width:90%;
+    }
+    .label {
+        text-align: center;
+    }
+    #parentsname {
+        float:right;
+        width: 90%;
+    }
+    #studentsname {
+        float:right;
+        width: 90%;
+    }
+    @media only screen and (max-width: 1880px) {
+        .label {
+           font-size: 13px;
+           text-align:left;
+        }
+      }
+      @media only screen and (max-width: 1520px) {
+        .label {
+           font-size: 11px;
+           text-align:left;
+        }
+      }
+      @media only screen and (max-width: 1300px) {
+        .label {
+           font-size: 9px;
+           display: none;
+           text-align:left;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="innercontainer">
+            <h1>Sign up</h1>
+            <hr>
+            <p id="emaillabel" class="label">Email: </p>
+            <form class="needs-validation">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <hr style="clear:both; border:0px solid black;">
+                <p class="passwordlabel label">Password: </p>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <hr style="clear:both; border:0px solid black;">
+                <p class="passwordlabel label">Teacher: </p>
+                <select id="select" class="form-select" aria-label="Default select example">
+                    <option selected disabled>Teacher</option>
+                </select>
+                <hr style="clear:both; border:0px solid black;">
+                <p class="passwordlabel label">Students Name: </p>
+                <input type="text" class="form-control" id="studentsname" placeholder="Students Name" required>
+                <hr style="clear:both; border:0px solid black;">
+                <p class="passwordlabel label">Parents Name: </p>
+                <input type="text" class="form-control" id="parentsname" placeholder="Parents Name" required>
+                <hr style="clear:both; border:0px solid black;">
+                <button type="submit" class="btn btn-dark" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>

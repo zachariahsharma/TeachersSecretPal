@@ -4,9 +4,155 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayo</title>
+  <title>VHS PTSA Secret Pals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <style>
+    html, body {
+      background: hsla(0, 0%, 0%, 1);
+      background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, white 100%);
+      overflow:hidden;
+      margin:0px;
+      padding:0px;
+      font-family: 'Roboto', sans-serif;
+    }
+    #container {
+      height: 100vh;
+      width:100vw;
+      margin:0px;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+    }
+    
+    #innercontainer {
+      width:50%;
+      height:500px;
+      background:rgb(150, 150, 150);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    @media only screen and (max-width: 1120px) {
+        #innercontainer {
+           font-size: 14px;
+        }
+      }
+      @media only screen and (max-width: 815px) {
+        #innercontainer {
+           font-size: 13px;
+        }
+      }
+      @media only screen and (max-width: 645px) {
+        #innercontainer {
+           font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 595px) {
+        #innercontainer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+          #innercontainer {
+             font-size: 15px;
+             width:100vw;
+          }
+        }
+      
+      @media only screen and (max-width: 435px) {
+        #innercontainer {
+           font-size: 13px;
+        }
+      }
+    #intro {
+      margin-top:4%;
+      width:100%;
+      text-align:center;
+    }
+    #Loginandgetstarted{
+      width:100%;
+      margin-top:5%;
+      display:flex;
+      justify-content:space-evenly;
+      align-items:center;
+    }
+    #getstarted {
+      background-color:#5C8DFF;
+      width:30%;
+      text-align:center;
+      padding:2%;
+      border:black solid 2px;
+      border-radius:10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #login {
+      background-color:rgb(0, 210, 68);
+      width:30%;
+      text-align:center;
+      padding:2%;
+      border:black solid 2px;
+      border-radius:10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #image1 {
+      display:block;
+      position:absolute;
+      top:0px;
+      margin-right:auto;
+      margin-left:auto;
+      width:10%;
+    }
+    @media only screen and (max-width: 595px) {
+        .btn {
+           font-size: 11px;
+        }
+    }
+    @media only screen and (max-width: 435px) {
+        .btn {
+           font-size: 9px;
+        }
+      }
+      @media only screen and (max-width: 410px) {
+        .btn {
+           font-size: 8px;
+        }
+      }
+      
+  </style>
 </head>
 <body>
-  <p>wsg homies</p>
+  
+  <div id="container">
+    <img src="Picture1.png" alt="VHS" id="image1">
+    <div id="innercontainer">
+      <div id="intro">
+        <h1>VHS PTSA Secret Pals</h1>
+        <p>Welcome to the Vandegrift PTSA sponsored Secret Pal program! The VHS Secret Pal Program is the most fun and exciting staff appreciation program found anywhere around. Our parent pals (or their student) drop off a surprise at the front desk for their Vandegrift secret pal once a month starting in October -- school supplies, treats such as cookies or flowers, lunch, etc.  Your identity is not revealed until our Reveal Party at the end of the school year!
+
+          Sign ups for parents will begin on the first day of school, be sure to sign up before August 31st! You will have the choice of the number of Secret Pals you wish to have!
+          
+          Then join the VHS Secret Pals Facebook group to receive updates and share ideas!</p>
+      </div>
+      <div id="Loginandgetstarted">
+        <div id="getstarted">
+          <p>Sign-up to become a Secret Pal for one or more teachers</p>
+          <a type="button" href="signup.html" class="btn btn-primary">Signup</a>
+
+        </div>
+        <div id="login">
+          <p>Let us know everytime you do something special for your teacher</p>
+          <a type="button" href="update.html" class="btn btn-success">Update</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>

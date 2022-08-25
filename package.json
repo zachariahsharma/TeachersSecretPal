@@ -1,0 +1,24 @@
+{
+  "name": "teacherssecretpal",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachariahsharma/TeachersSecretPal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachariahsharma/TeachersSecretPal/issues"
+  },
+  "homepage": "https://github.com/zachariahsharma/TeachersSecretPal#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "firebase": "^9.9.2"
+  }
+}
